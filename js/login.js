@@ -17,7 +17,7 @@ $(document).ready(function() {
                     let user = '';
                     usuario = student.nombre;
                     alert('welcome ' + usuario);
-                    document.location.href = "../Interfaces/ingresasteOrejo.php?";
+                    document.location.href = "../Interfaces/ingresasteOrejo.php";
                 } else {
                     alert('Error al ingresar\n' +
                         'Verifique usuario y contraseña');

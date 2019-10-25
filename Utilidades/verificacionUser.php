@@ -9,6 +9,9 @@
             $json =array();
             for($i=0;$i<count($usuario);$i++){
                     if ($user==$usuario[$i]->getLogin() && $contra==$usuario[$i]->getClave()){
+                        session_start();
+                        $_SESSION['usuario']=$usuario[$i]->getNombres();
+                        // header("Location:ingresasteOrejo.php");
                         $json = array(
                                 'id' => $usuario[$i]->getId(),
                                 'nombre' => $usuario[$i]->getNombres(),
