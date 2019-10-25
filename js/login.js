@@ -17,7 +17,7 @@ $(document).ready(function() {
                     let user = '';
                     usuario = student.nombre;
                     alert('welcome ' + usuario);
-                    document.location.href = "../Interfaces/ingresasteOrejo.php";
+                    document.location.href = "../orejas/ingresasteOrejo.php";
                 } else {
                     alert('Error al ingresar\n' +
                         'Verifique usuario y contraseña');
@@ -41,11 +41,6 @@ $(document).ready(function() {
                 // no reconoce el echo 'error'
                 if (response) {
                     let teacher = JSON.parse(response);
-
-                    // if ($('#recordar').prop('checked')) {
-                    //     document.cookie = "usuario=" + teacher.login + ";";
-                    //     document.cookie = "contraseña=" + teacher.clave + ";"
-                    //}
 
                     l = `${teacher.nombre}`
                     alert('Welcome ' + teacher.nombre);
