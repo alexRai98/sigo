@@ -1,0 +1,8 @@
+.boxlogin {
+    margin: auto auto;
+    width: 800px;
+    background: #fff;
+    border-radius: 10xp;
+    -webki-border-radius: 4px;
+    -mox-border-radius: 4px;
+}

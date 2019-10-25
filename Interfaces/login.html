@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="../css/util.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="../../cssFons/cssfons/all.css">
+    <title>Login</title>
+</head>
+
+<body style="background: url('../imagenes/font1.jpg')">
+    <div class="index">
+        <div class="d-flex" id="main">
+            <div class="container p-5">
+                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                    <li class="nav-item">
+                        <a class="btn btn-outline-info active shadow-lg rounded mx-1" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Log in</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-outline-info shadow-lg rounded" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Sing up</a>
+                    </li>
+
+                </ul>
+                <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                        <div class="jumbotron shadow-lg" style="background-color: white">
+                            <div class="emcabezado-Login" style="background-image: url(../imagenes/font.jpg)">
+                                <span class="titulo-emcabezado">LOG IN</span>
+                            </div>
+                            <form id="logeo">
+                                <p></p>
+                                <div class="row">
+                                    <div class="col-12"><input type="text" class="form-control" id="user" name="user" placeholder="Usuario" required></div>
+                                </div>
+                                <p></p>
+                                <div class="row">
+                                    <div class="col-12"><input type="password" class="form-control" name="contraseña" id="contraseña" placeholder="Contraseña" required></div>
+                                </div>
+                                <p></p>
+                                <div class="custom-control custom-switch">
+                                    <input type="checkbox" class="custom-control-input" id="remenber">
+                                    <label class="custom-control-label" for="customSwitch1">Remenber</label>
+                                </div>
+
+                                <div class="text-center p-5">
+                                    <button type="submit" class="btn btn-danger btn-lg btn-block"><i class="far fa-address-card"></i> Ingresar</button>
+                                </div>
+                            </form>
+
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                        <div class="jumbotron shadow-lg" style="background-color: white">
+                            <div class="text-center ">
+                                <strong><h1 class="text-primary">Registro Alumnos</h1></strong>
+                            </div>
+                            <form id="registro">
+                                <div class="col-12 my-4">
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="inputGroupPrepend"><i class="fas fa-user"></i></span>
+                                        </div>
+                                        <input type="text" class="form-control" id="ingresoName" placeholder="Name" aria-describedby="inputGroupPrepend" required>
+                                    </div>
+                                </div>
+                                <div class="col-12 my-4">
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="inputGroupPrepend2"><i class="fas fa-user"></i></span>
+                                        </div>
+                                        <input type="text" class="form-control" id="ingresoApellidos" placeholder="Surnames" aria-describedby="inputGroupPrepend2" required>
+                                    </div>
+                                </div>
+                                <div class="col-12 my-4">
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="inputGroupPrepend3"><i class="far fa-address-book"></i></span>
+                                        </div>
+                                        <input type="text" class="form-control" id="ingresoUsername" placeholder="Username" aria-describedby="inputGroupPrepend3" required>
+                                    </div>
+                                </div>
+                                <div class="col-12 my-4">
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="inputGroupPrepend4"><i class="fas fa-shield-alt"></i></span>
+                                        </div>
+                                        <input type="password" class="form-control" id="ingresoPassword" placeholder="Password" aria-describedby="inputGroupPrepend4" required>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 my-4">
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="inputGroupPrepend5"><i class="fas fa-shield-alt"></i></span>
+                                        </div>
+                                        <input type="password" class="form-control" id="ingresoPassword2" placeholder="Password Again" aria-describedby="inputGroupPrepend5" required>
+                                    </div>
+                                </div>
+
+
+
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input" required>
+                                    <label class="custom-control-label" for="customRadioInline1">Masculino</label>
+                                </div>
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input" required>
+                                    <label class="custom-control-label" for="customRadioInline2">Femenino</label>
+                                </div>
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" id="customRadioInline3" name="customRadioInline1" class="custom-control-input" required>
+                                    <label class="custom-control-label" for="customRadioInline3">Personalizado</label>
+                                </div>
+
+                                <div class="text-center p-5">
+                                    <button type="submit" class="btn btn-primary btn-lg btn-block"><i class="fas fa-user-plus "></i> Registrar </button>
+                                </div>
+
+                            </form>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+        <script src="../js/login.js"></script>
+
+</body>
+
+</html>
