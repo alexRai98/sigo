@@ -8,7 +8,7 @@
             if($_SESSION['usuario'] == null || $_SESSION['usuario'] ==''){
                 header("Location:../Utilidades/cerrarSession.php");
             }
-            $this->html= new OrejoTemplate("ingresaste.html");
+            $this->html= new OrejoTemplate("../Interfaces/ingresaste.html");
             $this->html->reemplaza("titulo","Inicio");
         }
         public function user (){
