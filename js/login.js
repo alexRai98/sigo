@@ -12,7 +12,7 @@ $(document).ready(function() {
             success: function(response) {
                 console.log(response);
                 //Arreglar->siempre ingresa
-                if (response != '[]') {
+                if (response) {
                     let student = JSON.parse(response);
                     let user = '';
                     usuario = student.nombre;
